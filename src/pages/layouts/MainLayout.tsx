@@ -8,7 +8,7 @@ const MainLayout = () => {
 
             <Header />
 
-            <main className="container">
+            <main className="container mx-auto my-6 ">
                 <Outlet></Outlet>
             </main>
         </div>

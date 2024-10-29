@@ -7,7 +7,7 @@ const navLinks = ["home", "destination", "crew", "technology"];
 
 
 const Navbar = () => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(true)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const open = () => setMobileMenuOpen(true);
     const close = () => setMobileMenuOpen(false);
 
