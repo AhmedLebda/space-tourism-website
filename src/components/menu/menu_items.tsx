@@ -14,10 +14,10 @@ const MenuItems = ({ items, path, numbered }: MenuItemsProps) => {
     return (
         <>
             {items.map((item, index) => {
-                const toPath = item === "home" ? "/" : `${path}/${item.replace(" ", "-")}`;
+                const toPath = index === 0 ? path : `${path}/${item.replace(" ", "-")}`;
                 return (
                     <li key={index} className='uppercase'>
-                        <NavLink to={toPath} className={({ isActive }) => getNavLinkClassName(isActive)}>
+                        <NavLink end={index === 0} to={toPath} className={({ isActive }) => getNavLinkClassName(isActive)}>
                             {numbered && <span aria-hidden="true" className='mr-2 hidden lg:inline'>{index.toString().padStart(2, '0')}</span>}
                             {item}
                         </NavLink>
