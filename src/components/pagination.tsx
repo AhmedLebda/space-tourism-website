@@ -1,23 +1,26 @@
 import { NavLink } from "react-router-dom"
 
 const getNavLinkClassName = (isActive: boolean) => {
-  return `bg-white block w-4 aspect-square rounded-full hover:opacity-75 focus:opacity-75 ${isActive ? 'opacity-75' : ''
+  return `bg-white block w-4 aspect-square rounded-full  hover:opacity-100 focus:opacity-100 ${isActive ? 'opacity-100' : 'opacity-30'
     }`;
 };
 
 interface PaginationProps {
-  count: number;
+  items: string[];
   path: string;
 }
 
-const Pagination = ({ count, path }: PaginationProps) => {
-  if (!path || path === '/') path = '';
+const Pagination = ({ items, path }: PaginationProps) => {
+
 
   return (
-    <nav className="flex items-center gap-2">
-      {Array.from({ length: count }).map((_, index) => <NavLink key={index} to={`${path}/${index}`} className={({ isActive }) => getNavLinkClassName(isActive)}>
-        <span className="sr-only">next page</span>
-      </NavLink>)}
+    <nav className="flex items-center justify-center md:justify-start gap-6">
+      {items.map((item, index) => {
+        const toPath = index === 0 ? path : `${path}/${item}`;
+        return <NavLink key={item} end={index === 0} to={toPath} className={({ isActive }) => getNavLinkClassName(isActive)}>
+          <span className="sr-only">next page</span>
+        </NavLink>
+      })}
     </nav>
   )
 }

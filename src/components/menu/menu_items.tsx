@@ -14,7 +14,7 @@ const MenuItems = ({ items, path, numbered }: MenuItemsProps) => {
     return (
         <>
             {items.map((item, index) => {
-                const toPath = index === 0 ? path : `${path}/${item.replace(" ", "-")}`;
+                const toPath = index === 0 ? path : `${path}/${item}`;
                 return (
                     <li key={index} className='uppercase'>
                         <NavLink end={index === 0} to={toPath} className={({ isActive }) => getNavLinkClassName(isActive)}>
