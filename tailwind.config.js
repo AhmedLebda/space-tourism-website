@@ -31,6 +31,12 @@ export default {
         'crew-desktop': "url('./src/assets/crew/background-crew-desktop.jpg')",
         'crew-tablet': "url('./src/assets/crew/background-crew-tablet.jpg')",
         'crew-mobile': "url('./src/assets/crew/background-crew-mobile.jpg')",
+        'technology-desktop':
+          "url('./src/assets/technology/background-technology-desktop.jpg')",
+        'technology-tablet':
+          "url('./src/assets/technology/background-technology-table')",
+        'technology-mobile':
+          "url('./src/assets/technology/background-technology-mobile')",
       },
     },
   },

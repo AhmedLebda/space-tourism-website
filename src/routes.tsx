@@ -5,6 +5,8 @@ import DestinationLayout from "./pages/layouts/DestinationLayout";
 import Destination from "./pages/Destination";
 import CrewLayout from "./pages/layouts/CrewLayout";
 import Crew from "./pages/Crew";
+import TechnologyLayout from "./pages/layouts/TechnologyLayout";
+import Technology from "./pages/Technology";
 
 const routes = [
     {
@@ -41,6 +43,21 @@ const routes = [
                     {
                         path: ":name",
                         element: <Crew />,
+                    }
+                ]
+            }
+            ,
+            {
+                path: "technology",
+                element: <TechnologyLayout />,
+                children: [
+                    {
+                        index: true,
+                        element: <Technology />,
+                    },
+                    {
+                        path: ":technology",
+                        element: <Technology />,
                     }
                 ]
             }

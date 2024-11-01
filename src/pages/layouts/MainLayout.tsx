@@ -6,6 +6,7 @@ const bgClassesMap: { [key: string]: string } = {
     home: "bg-home-mobile xs:bg-home-tablet md:bg-home-desktop",
     destination: "bg-destination-mobile xs:bg-destination-tablet md:bg-destination-desktop",
     crew: "bg-crew-mobile xs:bg-crew-tablet md:bg-crew-desktop",
+    technology: "bg-technology-mobile xs:bg-technology-tablet md:bg-technology-desktop",
 }
 
 const MainLayout = () => {
@@ -18,7 +19,7 @@ const MainLayout = () => {
 
             <Header />
 
-            <main className="mx-auto my-6">
+            <main className="my-6">
                 <Outlet></Outlet>
             </main>
         </div>
