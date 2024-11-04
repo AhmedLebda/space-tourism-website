@@ -9,7 +9,7 @@ interface MenuProps {
 const Menu = ({ items, path }: MenuProps) => {
     return (
         <nav>
-            <ul className="flex px-4 font-semibold md:text-lg gap-6">
+            <ul className="flex justify-center md:justify-start px-4 font-semibold md:text-lg gap-6">
                 <MenuItems items={items} path={path} numbered={false} />
             </ul>
         </nav>

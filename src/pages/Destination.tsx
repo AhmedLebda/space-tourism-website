@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Menu from "../components/menu/menu"
 import { destinations } from "../data/destinations";
+import Typography from "../components/typography/typography";
 
 
 const destinationNames = destinations.map(destination => destination.name);
@@ -9,20 +10,30 @@ const Destination = () => {
     const { planet } = useParams();
     const currentDestination = destinations.find(destination => destination.name === planet) || destinations[0]
     return (
-        <div className="h-full grid gap-4 grid-cols-1 md:grid-cols-2 text-center md:text-left max-w-screen-xl mx-auto  place-items-center p-8">
-            <div className="max-w-40 sm:max-w-48 md:max-w-72 lg:max-w-full">
+        <section className="h-full grid gap-y-14 grid-cols-1 grid-rows-[auto_1fr] md:grid-rows-1 md:grid-cols-2 text-center md:text-left place-items-center md:px-4 mx-auto max-w-screen-lg px-6">
+            <div className="max-w-48 md:max-w-72 mt-6">
                 <img src={currentDestination.image} alt={currentDestination.name} className="max-w-full" />
             </div>
-            <div className="max-w-sm">
+
+            <article className="flex flex-col gap-4 py-6">
                 <Menu items={destinationNames} path="/destination" />
-                <h2 className="font-bellefair text-6xl md:text-8xl mt-4 uppercase">{currentDestination.name}</h2>
-                <p className="pb-6 mb-4 border-b border-white/40 text-balance md:text-pretty md:text-xl">{currentDestination.description}</p>
+
+                <Typography variant="h1" as="h1" className="font-bellefair mt-4 uppercase">{currentDestination.name}</Typography>
+
+                <Typography variant="body" as="p" className="pb-6 mb-4 border-b border-white/40 text-balance md:text-pretty md:text-xl">{currentDestination.description}
+                </Typography>
+
                 <div className="flex justify-around text-lg">
-                    <p><span className="block uppercase">avg. distance</span> {currentDestination.distance}</p>
-                    <p><span className="block uppercase">est. travel time</span> {currentDestination.travel}</p>
+                    <Typography variant="h6" as="p">
+                        <Typography variant="h5" as="span" className="block uppercase">avg. distance</Typography> {currentDestination.distance}
+                    </Typography>
+                    <Typography variant="h6" as="p">
+                        <Typography variant="h5" as="span" className="block uppercase">est. travel time</Typography> {currentDestination.travel}
+                    </Typography>
                 </div>
-            </div>
-        </div>
+            </article>
+
+        </section>
     )
 }
 

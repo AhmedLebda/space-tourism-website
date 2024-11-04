@@ -12,7 +12,7 @@ const Navbar = () => {
     const close = () => setMobileMenuOpen(false);
 
     return (
-        <nav className="font-semibold tracking-wide">
+        <nav className="font-semibold tracking-wide z-50">
             {!mobileMenuOpen &&
                 <NavOpenButton onClick={open} />
             }
