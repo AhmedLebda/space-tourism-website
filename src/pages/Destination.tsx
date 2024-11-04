@@ -10,12 +10,12 @@ const Destination = () => {
     const { planet } = useParams();
     const currentDestination = destinations.find(destination => destination.name === planet) || destinations[0]
     return (
-        <section className="h-full grid gap-y-14 grid-cols-1 grid-rows-[auto_1fr] md:grid-rows-1 md:grid-cols-2 text-center md:text-left place-items-center md:px-4 mx-auto max-w-screen-lg px-6">
+        <section className="h-full grid gap-y-14 grid-cols-1 grid-rows-[auto_1fr] md:grid-rows-1 md:grid-cols-2 text-center md:text-left place-items-center md:px-4 mx-auto max-w-screen-xl px-6">
             <div className="max-w-48 md:max-w-72 mt-6">
                 <img src={currentDestination.image} alt={currentDestination.name} className="max-w-full" />
             </div>
 
-            <article className="flex flex-col gap-4 py-6">
+            <article className="flex flex-col gap-4 py-6 max-w-lg">
                 <Menu items={destinationNames} path="/destination" />
 
                 <Typography variant="h1" as="h1" className="font-bellefair mt-4 uppercase">{currentDestination.name}</Typography>

@@ -21,7 +21,7 @@ const Navbar = () => {
                 <MenuItems items={navLinks} />
             </ul>
 
-            {mobileMenuOpen && <div className="md:hidden bg-white/10 backdrop-blur-xl absolute top-0 bottom-0 right-0 left-1/2 p-6">
+            {mobileMenuOpen && <div className="md:hidden bg-white/10 backdrop-blur-xl fixed top-0 right-0 left-1/2 h-full p-6">
                 <NavCloseButton onClick={close} />
 
                 <ul className="flex flex-col gap-4">
