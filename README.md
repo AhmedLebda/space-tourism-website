@@ -1,8 +1,43 @@
-# React + Vite
+# Frontend Mentor - Space tourism website solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Live Site URL: [live site URL]()
 
-Currently, two official plugins are available:
+Space tourism website solution
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
+
+## Table of contents
+
+- [Overview](#overview)
+  - [Features](#Features)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
+
+## Overview
+
+### Features
+
+Users should be able to:
+
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
+
+### Screenshot
+
+![desktop](./src/public/screenshots/space-desktop.png)
+![mobile](./src/public/screenshots/space-mobile.png)
+
+### Built with
+
+- ReactJS
+- TypeScript
+- React-router-dom
+- TailwindCss
+
+## Author
+
+- Github - [Ahmed Lebda](https://github.com/AhmedLebda)
+- Frontend Mentor - [Ahmed Lebda](https://www.frontendmentor.io/profile/AhmedLebda)

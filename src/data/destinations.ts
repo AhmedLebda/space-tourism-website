@@ -1,7 +1,7 @@
-import Moon from '../assets/destination/image-moon.png';
-import Mars from '../assets/destination/image-mars.png';
-import Europa from '../assets/destination/image-europa.png';
-import Titan from '../assets/destination/image-titan.png';
+import Moon from '../public/destination/image-moon.png';
+import Mars from '../public/destination/image-mars.png';
+import Europa from '../public/destination/image-europa.png';
+import Titan from '../public/destination/image-titan.png';
 interface Destinations {
   id: string;
   name: string;

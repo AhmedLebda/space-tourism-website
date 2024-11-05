@@ -1,4 +1,4 @@
-import CloseIcon from "../../assets/shared/icon-close.svg"
+import CloseIcon from "../../public/shared/icon-close.svg"
 
 
 

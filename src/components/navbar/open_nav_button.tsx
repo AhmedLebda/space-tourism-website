@@ -1,4 +1,4 @@
-import BurgerIcon from "../../assets/shared/icon-hamburger.svg"
+import BurgerIcon from "../../public/shared/icon-hamburger.svg"
 
 
 interface NavOpenButtonProps {
