@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop](./src/public/screenshots/space-desktop.png)
-![mobile](./src/public/screenshots/space-mobile.png)
+![desktop](./src/assets/screenshots/space-desktop.png)
+![mobile](./src/assets/screenshots/space-mobile.png)
 
 ### Built with
 

@@ -19,24 +19,18 @@ export default {
         mainLayout: 'min-content 1fr',
       },
       backgroundImage: {
-        'home-desktop': "url('./src/public/home/background-home-desktop.jpg')",
-        'home-tablet': "url('./src/public/home/background-home-tablet.jpg')",
-        'home-mobile': "url('./src/public/home/background-home-mobile.jpg')",
-        'destination-desktop':
-          "url('./src/public/destination/background-destination-desktop.jpg')",
-        'destination-tablet':
-          "url('./src/public/destination/background-destination-tablet.jpg')",
-        'destination-mobile':
-          "url('./src/public/destination/background-destination-mobile.jpg')",
-        'crew-desktop': "url('./src/public/crew/background-crew-desktop.jpg')",
-        'crew-tablet': "url('./src/public/crew/background-crew-tablet.jpg')",
-        'crew-mobile': "url('./src/public/crew/background-crew-mobile.jpg')",
-        'technology-desktop':
-          "url('./src/public/technology/background-technology-desktop.jpg')",
-        'technology-tablet':
-          "url('./src/public/technology/background-technology-table')",
-        'technology-mobile':
-          "url('./src/public/technology/background-technology-mobile')",
+        'home-desktop': `url(${require('path').resolve(__dirname, 'src/assets/home/background-home-desktop.jpg')})`,
+        'home-tablet': `url(${require('path').resolve(__dirname, 'src/assets/home/background-home-tablet.jpg')})`,
+        'home-mobile': `url(${require('path').resolve(__dirname, 'src/assets/home/background-home-mobile.jpg')})`,
+        'destination-desktop': `url(${require('path').resolve(__dirname, 'src/assets/destination/background-destination-desktop.jpg')})`,
+        'destination-tablet': `url(${require('path').resolve(__dirname, 'src/assets/destination/background-destination-tablet.jpg')})`,
+        'destination-mobile': `url(${require('path').resolve(__dirname, 'src/assets/destination/background-destination-mobile.jpg')})`,
+        'crew-desktop': `url(${require('path').resolve(__dirname, 'src/assets/crew/background-crew-desktop.jpg')})`,
+        'crew-tablet': `url(${require('path').resolve(__dirname, 'src/assets/crew/background-crew-tablet.jpg')})`,
+        'crew-mobile': `url(${require('path').resolve(__dirname, 'src/assets/crew/background-crew-mobile.jpg')})`,
+        'technology-desktop': `url(${require('path').resolve(__dirname, 'src/assets/technology/background-technology-desktop.jpg')})`,
+        'technology-tablet': `url(${require('path').resolve(__dirname, 'src/assets/technology/background-technology-tablet.jpg')})`,
+        'technology-mobile': `url(${require('path').resolve(__dirname, 'src/assets/technology/background-technology-mobile.jpg')})`,
       },
     },
   },

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import SiteLogo from "../public/shared/logo.svg"
+import SiteLogo from "../assets/shared/logo.svg"
 
 const Logo = () => {
     return (

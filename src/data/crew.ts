@@ -1,7 +1,7 @@
-import firstUser from '../public/crew/image-douglas-hurley.png';
-import secondUser from '../public/crew/image-mark-shuttleworth.png';
-import thirdUser from '../public/crew/image-victor-glover.png';
-import fourthUser from '../public/crew/image-anousheh-ansari.png';
+import firstUser from '../assets/crew/image-douglas-hurley.png';
+import secondUser from '../assets/crew/image-mark-shuttleworth.png';
+import thirdUser from '../assets/crew/image-victor-glover.png';
+import fourthUser from '../assets/crew/image-anousheh-ansari.png';
 
 interface Crew {
   id: string;

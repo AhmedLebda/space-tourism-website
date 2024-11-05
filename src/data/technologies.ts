@@ -1,9 +1,9 @@
-import techOnePortrait from '../public/technology/image-launch-vehicle-portrait.jpg';
-import techOneLandscape from '../public/technology/image-launch-vehicle-landscape.jpg';
-import techTwoPortrait from '../public/technology/image-spaceport-portrait.jpg';
-import techTwoLandscape from '../public/technology/image-spaceport-landscape.jpg';
-import techThreePortrait from '../public/technology/image-space-capsule-portrait.jpg';
-import techThreeLandscape from '../public/technology/image-space-capsule-landscape.jpg';
+import techOnePortrait from '../assets/technology/image-launch-vehicle-portrait.jpg';
+import techOneLandscape from '../assets/technology/image-launch-vehicle-landscape.jpg';
+import techTwoPortrait from '../assets/technology/image-spaceport-portrait.jpg';
+import techTwoLandscape from '../assets/technology/image-spaceport-landscape.jpg';
+import techThreePortrait from '../assets/technology/image-space-capsule-portrait.jpg';
+import techThreeLandscape from '../assets/technology/image-space-capsule-landscape.jpg';
 interface Technology {
   id: string;
   name: string;
